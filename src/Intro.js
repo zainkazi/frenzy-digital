@@ -2,9 +2,9 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className="text-center mx-40 my-20 border-2 border-blue-700">
+    <div className="text-center mx-auto md:mx-40 my-20">
       <h1 className="text-5xl text-blue-700 font-mono">What we do</h1>
-      <p className="text-xl p-5">
+      <p className="text-xl p-7">
         We specialize in helping businesses of all sizes effectively reach their
         target audience and achieve their marketing goals through the use of
         Facebook and its suite of tools. Our team of experts has a deep
