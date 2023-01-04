@@ -5,7 +5,6 @@ import Header from "./Header";
 import Homepage from "./Homepage";
 import Intro from "./Intro";
 import Revenue from "./Revenue";
-import Confirmation from "./Confirmation";
 
 function App() {
   return (
