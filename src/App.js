@@ -5,16 +5,28 @@ import Header from "./Header";
 import Homepage from "./Homepage";
 import Intro from "./Intro";
 import Revenue from "./Revenue";
+import Confirmation from "./Confirmation";
+import { Routes, Route } from "react-router";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Homepage />
-      <Intro />
-      <Companies />
-      <Revenue />
-      <Appointment />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Homepage />
+              <Intro />
+              <Companies />
+              <Revenue />
+              <Appointment />
+            </>
+          }
+        />
+        <Route path="/booked" element={<Confirmation />} />
+      </Routes>
     </div>
   );
 }

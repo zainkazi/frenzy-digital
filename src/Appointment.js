@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Appointment = () => {
+  const navigate = useNavigate();
+  const handleSubmit = () => {
+    navigate("/booked");
+  };
   return (
     <div className="mt-20 py-8 bg-blue-700">
       <div className="text-center">
@@ -33,7 +38,10 @@ const Appointment = () => {
             className="p-2 border-2 w-72 md:w-max border-black outline-none rounded"
           ></textarea>
         </div>
-        <div className="text-xl max-w-max select-none bg-blue-500 p-4 my-5 rounded-md border-2 border-black cursor-default font-semibold transition md:hover:bg-white bold">
+        <div
+          className="text-xl max-w-max select-none bg-blue-500 p-4 my-5 rounded-md border-2 border-black cursor-default font-semibold transition md:hover:bg-white bold"
+          onClick={handleSubmit}
+        >
           Submit
         </div>
       </form>
