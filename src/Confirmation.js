@@ -9,7 +9,7 @@ const Confirmation = () => {
       </div>
       <h1 className="text-3xl md:text-5xl text-blue-700">You're Booked!</h1>
       <p className="text-xl p-7">
-        We have received your email and will contact you shortly.
+        We have received your message and will contact you shortly.
       </p>
       <p>
         We wil call you via Zoom or phone at our free time slots. The time and

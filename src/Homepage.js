@@ -12,9 +12,11 @@ const Homepage = () => {
           <div className="text-blue-700 text-3xl font-mono">
             Facebook Marketing Agency <br /> For Local Businesses
           </div>
-          <div className="text-xl md:max-w-max select-none bg-blue-700 p-5 my-5 rounded-md border-2 border-blue-700 cursor-default font-semibold transition md:hover:bg-white bold">
-            Scale Your Business
-          </div>
+          <a href="#appointment">
+            <div className="text-xl md:max-w-max select-none bg-blue-700 p-5 my-5 rounded-md border-2 border-blue-700 cursor-default font-semibold transition md:hover:bg-white bold">
+              Scale Your Business
+            </div>
+          </a>
         </div>
       </div>
     </div>
