@@ -1,5 +1,6 @@
 import React from "react";
 import homepageIcon from "./assets/computer.png";
+import Social from "./Social";
 
 const Homepage = () => {
   return (
@@ -18,6 +19,9 @@ const Homepage = () => {
             </div>
           </a>
         </div>
+      </div>
+      <div className="flex items-center justify-center space-x-5 mx-4 md:hidden">
+        <Social />
       </div>
     </div>
   );

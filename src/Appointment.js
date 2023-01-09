@@ -1,13 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import sendingIcon from "./assets/loading.png";
 
 const Appointment = () => {
   const navigate = useNavigate();
   const form = useRef();
+  const loadingClass = "hidden";
+  const [loading, setLoading] = useState(loadingClass);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading("animate-spin");
 
     emailjs
       .sendForm(
@@ -18,6 +22,7 @@ const Appointment = () => {
       )
       .then(
         () => {
+          setLoading(loadingClass);
           navigate("/booked");
         },
         (error) => {
@@ -65,10 +70,15 @@ const Appointment = () => {
           ></textarea>
         </div>
         <div
-          className="text-xl max-w-max select-none bg-blue-500 p-4 my-5 rounded-md border-2 border-black cursor-default font-semibold transition md:hover:bg-white bold"
+          className="flex items-center justify-between space-x-2 text-xl max-w-max select-none bg-blue-500 p-4 my-5 rounded-md border-2 border-black cursor-default font-semibold transition md:hover:bg-white bold"
           onClick={sendEmail}
         >
-          Submit
+          <img
+            src={sendingIcon}
+            alt="Sending email"
+            className={`w-6 ${loading}`}
+          />
+          <div>Submit</div>
         </div>
       </form>
     </div>
