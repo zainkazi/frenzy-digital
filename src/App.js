@@ -6,7 +6,7 @@ import Homepage from "./Homepage";
 import Intro from "./Intro";
 import Revenue from "./Revenue";
 import Confirmation from "./Confirmation";
-import { Routes, Route } from "react-router";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
           }
         />
         <Route path="/booked" element={<Confirmation />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
   );
