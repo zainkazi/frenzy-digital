@@ -1,6 +1,7 @@
 import React from "react";
 import homepageIcon from "./assets/computer.png";
 import Social from "./Social";
+import colors from "./colors";
 
 const Homepage = () => {
   return (
@@ -10,11 +11,13 @@ const Homepage = () => {
           <img src={homepageIcon} alt="Homepage Icon" />
         </div>
         <div className="my-5 mx-10">
-          <div className="text-blue-700 text-3xl font-mono">
+          <div className={`${colors.TEXT_COLOR} text-3xl font-mono`}>
             Facebook Marketing Agency <br /> For Local Businesses
           </div>
           <a href="#appointment">
-            <div className="text-xl md:max-w-max select-none bg-blue-700 p-5 my-5 rounded-md border-2 border-blue-700 cursor-default font-semibold transition md:hover:bg-white bold">
+            <div
+              className={`text-xl md:max-w-max select-none ${colors.THEME_COLOR} p-5 my-5 rounded-md border-2 ${colors.BORDER_COLOR} cursor-default font-semibold transition ${colors.HOVER_BUTTON} bold`}
+            >
               Scale Your Business
             </div>
           </a>

@@ -1,9 +1,10 @@
 import React from "react";
+import colors from "./colors";
 
 const Intro = () => {
   return (
     <div className="text-center mx-auto md:mx-40 my-20">
-      <h1 className="text-5xl text-blue-700 font-mono">What we do</h1>
+      <h1 className={`text-5xl ${colors.TEXT_COLOR} font-mono`}>What we do</h1>
       <p className="text-xl p-7">
         We specialize in helping businesses of all sizes effectively reach their
         target audience and achieve their marketing goals through the use of

@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import sendingIcon from "./assets/loading.png";
+import colors from "./colors";
 
 const Appointment = () => {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ const Appointment = () => {
   };
 
   return (
-    <div className="mt-20 py-8 bg-blue-700" id="appointment">
+    <div className={`mt-20 py-8 ${colors.THEME_COLOR}`} id="appointment">
       <div className="text-center">
         <h1 className="text-5xl font-mono">Book an appointment</h1>
         <p className="text-xl p-5">
@@ -70,7 +71,7 @@ const Appointment = () => {
           ></textarea>
         </div>
         <div
-          className="flex items-center justify-between space-x-2 text-xl max-w-max select-none bg-blue-500 p-4 my-5 rounded-md border-2 border-black cursor-default font-semibold transition md:hover:bg-white bold"
+          className={`flex items-center justify-between space-x-2 text-xl max-w-max select-none ${colors.SUBMIT_BUTTON} p-4 my-5 rounded-md border-2 border-black cursor-default font-semibold transition ${colors.SUBMIT_BUTTON_HOVER} bold`}
           onClick={sendEmail}
         >
           <img
