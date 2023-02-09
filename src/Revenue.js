@@ -5,7 +5,7 @@ const Revenue = () => {
   return (
     <div className="text-center mx-auto md:mx-40 my-20">
       <div
-        className={`flex flex-col flex-wrap font-mono ${colors.TEXT_COLOR} border-b-4 mx-20 md:mx-0 ${colors.BORDER_COLOR}`}
+        className={`flex flex-col flex-wrap font-mono ${colors.REVENUE} border-b-4 mx-20 md:mx-0 ${colors.BORDER_COLOR}`}
       >
         <div className="text-3xl md:text-5xl text-black font-semibold">
           TOTAL REVENUE GENERATED
